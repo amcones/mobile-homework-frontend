@@ -44,7 +44,7 @@ export default {
         if (valid) {
           console.log(this.loginForm)
           axios
-              .post('http://localhost:8080/checkLogin', {
+              .post('http://123.60.135.201:8080/checkLogin', {
                 user_name: this.loginForm.name,
                 user_password: this.loginForm.password
               })
@@ -73,9 +73,22 @@ export default {
 <style scoped>
 * {
   text-align: center;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 40px;
 }
 
 #login-wrapper {
-  margin: 100px 50px;
+  margin: 50px 50px;
+}
+
+form {
+  margin: 80px 0;
+}
+
+button {
+  width: 200px;
 }
 </style>

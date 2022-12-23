@@ -24,7 +24,7 @@ export default {
 function useEmitAddTodo(tid, emit) {
   const todoContent = ref("")
   const emitAddTodo = () => {
-    axios.post("http://localhost:8080/addTodo", {
+    axios.post("http://123.60.135.201:8080/addTodo", {
       user_id: window.uid,
       todo_content: todoContent.value,
       todo_completed: false

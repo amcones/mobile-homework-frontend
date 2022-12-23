@@ -9,7 +9,7 @@ export default function useTodos() {
 
     // 获取远程 todos
     const fetchTodos = async () => {
-        await axios.get("http://localhost:8080/getTodo", {params: {userId: window.uid}})
+        await axios.get("http://123.60.135.201:8080/getTodo", {params: {userId: window.uid}})
             .then(async (successResponse) => {
                 if (successResponse.data.code === 200) {
                     const rawTodos = await successResponse.data.data;
@@ -25,10 +25,6 @@ export default function useTodos() {
             .catch(failResponse => {
                 alert("获取失败" + failResponse)
             })
-        // const response = await fetch(
-        //     "https://jsonplaceholder.typicode.com/todos?_limit=5"
-        // );
-
     };
 
     onMounted(() => {

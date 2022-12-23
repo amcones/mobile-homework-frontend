@@ -19,7 +19,7 @@ export default {
   props: ["todos"],
   methods: {
     changeState(todo) {
-      axios.patch('http://localhost:8080/updateTodo', {
+      axios.patch('http://123.60.135.201:8080/updateTodo', {
         todo_id: todo.id,
         user_id: window.uid,
         todo_content: todo.content,

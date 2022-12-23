@@ -47,7 +47,7 @@ export default {
 .check-container input {
   width: 25px;
   height: 25px;
-  border: solid 1px #dddddd;
+  border: solid 1px var(--v_primary);
   -webkit-border-radius: 50%;
   border-radius: 50%;
   font-size: 0.8rem;
